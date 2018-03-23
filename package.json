@@ -5,6 +5,7 @@
     "version": "0.0.1",
     "icon": "icon.png",
     "publisher": "lucianonooijen",
+    "repository": "https://github.com/lucianonooijen/plate-vscode",
     "engines": {
         "vscode": "^1.0.0"
     },
