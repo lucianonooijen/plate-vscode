@@ -4,14 +4,14 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>liquid</string>
+		<string>plate</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x){%\s*(if|unless|for|paginate|capture|form|case|tablerow|raw|comment)[^(%})]+%}</string>
 	<key>foldingStopMarker</key>
 	<string>(?x){%\s*(endif|endunless|endfor|endpaginate|endcapture|endform|endcase|endtablerow|endraw|endcomment)[^(%})]+%}</string>
 	<key>name</key>
-	<string>HTML (Liquid)</string>
+	<string>HTML (Plate)</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -20,7 +20,7 @@
 			<key>end</key>
 			<string>{%-?\s*endcomment\s*-?%}</string>
 			<key>name</key>
-			<string>comment.block.liquid</string>
+			<string>comment.block.plate</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -28,7 +28,7 @@
 			<key>end</key>
 			<string>-?}}</string>
 			<key>name</key>
-			<string>punctuation.output.liquid</string>
+			<string>punctuation.output.plate</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -43,7 +43,7 @@
 			<key>end</key>
 			<string>-?%}</string>
 			<key>name</key>
-			<string>punctuation.tag.liquid</string>
+			<string>punctuation.tag.plate</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -71,7 +71,7 @@
 					<key>match</key>
 					<string>/=</string>
 					<key>name</key>
-					<string>keyword.operator.assignment.augmented.liquid</string>
+					<string>keyword.operator.assignment.augmented.plate</string>
 				</dict>
 			</array>
 		</dict>
@@ -83,7 +83,7 @@
 					<key>match</key>
 					<string>/=</string>
 					<key>name</key>
-					<string>keyword.operator.assignment.augmented.liquid</string>
+					<string>keyword.operator.assignment.augmented.plate</string>
 				</dict>
 			</array>
 		</dict>
@@ -95,7 +95,7 @@
 					<key>match</key>
 					<string>\s+(and|or|not|contains|(\!\=|\=\=|&lt;\=|&gt;\=|&lt;|&gt;)\s+</string>
 					<key>name</key>
-					<string>keyword.operator.logical.liquid</string>
+					<string>keyword.operator.logical.plate</string>
 				</dict>
 			</array>
 		</dict>
@@ -107,13 +107,13 @@
 					<key>match</key>
 					<string>(?&lt;={%)\s*(\w+)</string>
 					<key>name</key>
-					<string>entity.name.tag.liquid</string>
+					<string>entity.name.tag.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(?&lt;={%-)\s*(\w+)</string>
 					<key>name</key>
-					<string>entity.name.tag.liquid</string>
+					<string>entity.name.tag.plate</string>
 				</dict>
 			</array>
 		</dict>
@@ -127,12 +127,12 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>invalid.illegal.filter.liquid</string>
+							<string>invalid.illegal.filter.plate</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>invalid.illegal.filter.liquid</string>
+							<string>invalid.illegal.filter.plate</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -142,13 +142,13 @@
 					<key>match</key>
 					<string>(?&lt;=\s)(\+|\-|\/|\*)(?=\s)</string>
 					<key>name</key>
-					<string>invalid.illegal.filter.liquid</string>
+					<string>invalid.illegal.filter.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(false|true|nil)</string>
 					<key>name</key>
-					<string>constant.language.liquid</string>
+					<string>constant.language.plate</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -156,7 +156,7 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>invalid.illegal.operator.liquid</string>
+							<string>invalid.illegal.operator.plate</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -166,7 +166,7 @@
 					<key>match</key>
 					<string>\s+(and|or|not|contains|in|by|((\!|\=|\&lt;|\&gt;)\=))\s+</string>
 					<key>name</key>
-					<string>keyword.operator.liquid</string>
+					<string>keyword.operator.plate</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -174,7 +174,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>invalid.illegal.assignment.liquid</string>
+							<string>invalid.illegal.assignment.plate</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -184,19 +184,19 @@
 					<key>match</key>
 					<string>\|\s+(?![\.0-9])[a-zA-Z0-9_-]+\:\s+</string>
 					<key>name</key>
-					<string>support.function.with-args.liquid</string>
+					<string>support.function.with-args.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\|\s+(?![\.0-9])[a-zA-Z0-9_-]+\s+</string>
 					<key>name</key>
-					<string>support.function.without-args.liquid</string>
+					<string>support.function.without-args.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(?&lt;=\s)(with|offset\:|limit\:)(?=\s)</string>
 					<key>name</key>
-					<string>keyword.control.liquid</string>
+					<string>keyword.control.plate</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -204,7 +204,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>invalid.illegal.argument.liquid</string>
+							<string>invalid.illegal.argument.plate</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -214,7 +214,7 @@
 					<key>match</key>
 					<string>(?&lt;=\s)(\w+\:)(?=\:\s)</string>
 					<key>name</key>
-					<string>invalid.illegal.liquid</string>
+					<string>invalid.illegal.plate</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -222,7 +222,7 @@
 					<key>end</key>
 					<string>"</string>
 					<key>name</key>
-					<string>string.quoted.double.liquid</string>
+					<string>string.quoted.double.plate</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -230,49 +230,49 @@
 					<key>end</key>
 					<string>'</string>
 					<key>name</key>
-					<string>string.quoted.single.liquid</string>
+					<string>string.quoted.single.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(-|\+)?\s*[0-9]+(\.[0-9]+)?</string>
 					<key>name</key>
-					<string>constant.numeric.liquid</string>
+					<string>constant.numeric.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\b(collection|product|linklist|linklists|order|link|customer|customer_address|line_item|shop|collections|page_title|template|image|blog|blogs|cart|pages|theme|themes|variant|items|comment|forloop|settings)\b</string>
 					<key>name</key>
-					<string>support.class.liquid</string>
+					<string>support.class.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\b(assets|author|body|body_raw|current|date|excerpt_raw|meta|next|pages|parent|posts|previous|site|tags|taxonomy|title|url)\b</string>
 					<key>name</key>
-					<string>support.class.liquid</string>
+					<string>support.class.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>((?&lt;=\w\:\s)\w+)</string>
 					<key>name</key>
-					<string>variable.parameter.liquid</string>
+					<string>variable.parameter.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(?&lt;=\.)\w+\b</string>
 					<key>name</key>
-					<string>support.variable.liquid</string>
+					<string>support.variable.plate</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\w+</string>
 					<key>name</key>
-					<string>variable.other.liquid</string>
+					<string>variable.other.plate</string>
 				</dict>
 			</array>
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.html.liquid</string>
+	<string>text.html.plate</string>
 	<key>uuid</key>
 	<string>f2a39460-98fd-11e1-a8b0-0800200c9a66</string>
 </dict>

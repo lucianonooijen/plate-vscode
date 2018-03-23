@@ -1,10 +1,10 @@
 {
-    "name": "language-liquid",
-    "displayName": "Liquid Languages Support",
-    "description": "Liquid Languages Syntax Highlighter",
-    "version": "0.0.3",
+    "name": "language-plate",
+    "displayName": "Plate Languages Support",
+    "description": "Plate Languages Syntax Highlighter",
+    "version": "0.0.1",
     "icon": "icon.png",
-    "publisher": "neilding",
+    "publisher": "lucianonooijen",
     "engines": {
         "vscode": "^1.0.0"
     },
@@ -13,15 +13,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "liquid",
-            "aliases": ["HTML Liquid", "liquid"],
-            "extensions": [".liquid"],
-            "configuration": "./liquid.configuration.json"
+            "id": "plate",
+            "aliases": ["HTML Plate", "plate"],
+            "extensions": [".plate"],
+            "configuration": "./plate.configuration.json"
         }],
         "grammars": [{
-            "language": "liquid",
-            "scopeName": "text.html.liquid",
-            "path": "./syntaxes/liquid.tmLanguage"
+            "language": "plate",
+            "scopeName": "text.html.plate",
+            "path": "./syntaxes/plate.tmLanguage"
         }]
     }
 }
