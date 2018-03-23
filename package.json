@@ -1,8 +1,8 @@
 {
     "name": "language-plate",
-    "displayName": "Plate Languages Support",
-    "description": "Plate Languages Syntax Highlighter",
-    "version": "0.0.2",
+    "displayName": "Plate Language Support",
+    "description": "Plate Language Syntax Highlighter",
+    "version": "0.0.3",
     "icon": "icon.png",
     "publisher": "lucianonooijen",
     "repository": "https://github.com/lucianonooijen/plate-vscode",

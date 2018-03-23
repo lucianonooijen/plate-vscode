@@ -1,7 +1,6 @@
 # Plate language support
 
-This plugin is made by [Luciano Nooijen](https://github.com/lucianonooijen/) to be used with [Start With Plate](http://startwithplate.com/).
-
+This plugin is made by [Luciano Nooijen](https://github.com/lucianonooijen/) to be used with [Plate CMS](https://www.getplate.com/).
 
 ### Sources
 
